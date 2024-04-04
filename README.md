@@ -1,7 +1,7 @@
 
 <h2 align="center">
   308A.4 - AJAX and Data Fetching
-  <a href="https://hannah-moon.github.io/21_JS_CatnDog_AJAX-and-Data-Fetching/" target="_blank">Cutest Contest</a>
+  <a href="https://hannah-moon.github.io/21_JS_CatnDog_AJAX-and-Data-Fetching/" target="_blank">Cuttest Contest</a>
 </h2>
 
 <div align="center">
