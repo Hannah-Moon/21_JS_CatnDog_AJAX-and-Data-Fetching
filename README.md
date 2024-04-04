@@ -1,13 +1,20 @@
-# 308A.4 - AJAX and Data Fetching
 
-In this class, I've learned how to demonstrate fetch() to connect to an external API to show a random image of a dog and cat. 
+<h2 align="center">
+  308A.4 - AJAX and Data Fetching
+  <a href="https://hannah-moon.github.io/07_SBA-307_BuildaWebsite_wHTMLandCSS/" target="_blank">Cutest Contest</a>
+</h2>
+
+<div align="center">
+  <img alt="Demo" src="dogncat.png">
+</div>
+
+<br/>
 
 
-## Tech Stack
+
+## Built With
 
 **Language:** JS, HTML, CSS
-
-
 
 
 
