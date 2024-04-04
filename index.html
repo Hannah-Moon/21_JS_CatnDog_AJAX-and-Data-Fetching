@@ -8,24 +8,78 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
     </head>
     <body>
        
-        <h1 class="title">Cats vs Dog Cuteness Index</h1>
+        <h1 class="title">Cutest Contest</h1>
+
+        <div class="infobox">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="score-box catScore">
+                        <h1>Score : <span class="c1"> </span></h1>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="score-box dogScore">
+                        <h1>Score : <span class="d1"> </span></h1>
+                    </div>
+                </div>
+            </div>
 
         <div class="animalHolder">
-            <div class="cats">
-                <img src="" alt="" class="meow">
+
+            <div class="row">
+
+            <!-- Cat -->
+            <div class="col-md-6"> <!-- Each card occupies 6 columns on medium screens and above -->
+
+            <div class="card">
+
+                <div class="cats">
+                    
+                    <img src="" class="card-img-top" id="meow" alt="">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Cat</h5>
+                
+                    <p class="card-text">We have soft, rounded body shapes. We have fur that's pleasing to touch. We make high-pitched, baby-like meows and comforting, rumbly purrs. Cats are chock full of cute characteristics that make humans want to take care of them.</p>
+                    </div>
+            
             </div>
-            <div class="dogs">
-                <img src="" alt="" class="woof">
             </div>
+
+            <!-- Dog -->
+            <div class="col-md-6"> <!-- Each card occupies 6 columns on medium screens and above -->
+
+            <div class="card">
+                
+                <div class="dogs">
+                    <img src="" class="card-img-top" id="woof" alt="">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">Dog</h5>
+                    <p class="card-text">We have floppy ears and furry coats to big expressive eyes, there's no denying that we are the cutest creatures on earth. Not only do we look adorable, cuddled up in your lap or chasing a ball around the yard, but we are playful antics and loving gestures make you smile every day.</p>
+                </div>
+              
+            </div>
+            </div>
+</div>
         </div>
-       <button class="which" onclick="startGame()">Which is Cutest?</button>
-        <div class="infobox">
-            <h1 class="catScore">Score : <span class="c1"> </span></h1>
-            <h1 class="dogScore">Score : <span class="d1"> </span></h1>
-        </div>
+
+<br>
+
+       <button type="button" id="which" class="btn btn-primary btn-lg" onclick="startGame()">Which is Cuttest?</button>
+
+
+
+
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
         <script src="app.js" async defer></script>
     </body>
 </html>

@@ -74,22 +74,24 @@ let doghouse = document.querySelector(".dogs");
 
 catPoints.innerHTML = catScore;
 dogPoints.innerHTML = dogscore;
+
 // ---------------------------------------------QS
 const getCat = async () => {
   let response = await fetch("https://api.thecatapi.com/v1/images/search");
   const jsonData = await response.json();
-  let catImg = document.querySelector(".meow");
+  let catImg = document.querySelector("#meow");
   catImg.setAttribute("src", jsonData[0].url);
   // console.log(jsonData[0].url);
 };
+
 const getDog = async () => {
   const response = await fetch("https://dog.ceo/api/breeds/image/random");
   const jsonData = await response.json();
-  console.log(jsonData);
   const url = jsonData.message;
-  let dogImg = document.querySelector(".woof");
+  let dogImg = document.querySelector("#woof");
   dogImg.setAttribute("src", url);
 };
+
 getAnotherCat = async () => {
   let response = await fetch(
     "https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=live_cpUvXtjvo8aqXosFx8FMq04zFnSQQTUl87DhQRzfIvQMgKnutC13vYL919bHVEaR"
@@ -102,7 +104,7 @@ getAnotherCat = async () => {
   console.log(jsonData);
   // Look at the data type/ structure
   let link = jsonData[0].url;
-  let catImg = document.querySelector(".meow");
+  let catImg = document.querySelector("#meow");
   catImg.setAttribute("src", link);
   console.log("CatInfo: ", link);
 };
@@ -118,8 +120,9 @@ const startGame = () => {
     dogscore++;
     dogPoints.innerHTML = dogscore;
   } else {
-    alert("Wrong Response");
+    alert("Wrong Response!");
   }
 };
+
 getAnotherCat();
 getDog();

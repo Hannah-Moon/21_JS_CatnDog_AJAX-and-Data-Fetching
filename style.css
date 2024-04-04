@@ -2,21 +2,54 @@
     border:solid black;
     margin:1em;
     text-align:center;
+    display: flex;
+    justify-content: center;
 }
+
 .animalHolder{
+    padding-left: 20px;
+    padding-bottom: 10pxs;
     display:flex;
+    justify-content: center;
+    align-items: row;
+    justify-content: space-around;
 }
-.cats{
-    /* border:solid blue; */
-    width:50%;
-    height:42vh;
+
+.
+.card {
+    height: 400px; /* Set a fixed height for the cards */
 }
+.card-img-top {
+    height: 250px; /* Set a fixed height for the card images */
+    width: auto; /* Allow the width to adjust automatically based on the aspect ratio */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    object-fit: cover; /* Ensure the entire image is visible within the specified dimensions */
+}
+.infobox {
+    margin-bottom: 20px; /* Add margin to create space between the score section and the cards */
+}
+.score-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card-img-top {
+    flex-grow: 1;
+    object-fit:contain;
+}
+.card-body{
+    flex-grow:0;
+}
+
 .dogs{
     /* border:solid red; */
     width:50%;
     height:42vh;
 }
-.meow,.woof{
+#meow,.woof{
     width:100%;
     height:100%;
 }
@@ -24,8 +57,4 @@
     width:100%;
     font-size:32px;
     font-family: cinzel;
-}
-.infobox{
-    display:flex;
-    justify-content: space-between;
 }
