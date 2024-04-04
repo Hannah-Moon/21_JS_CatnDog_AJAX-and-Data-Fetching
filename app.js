@@ -112,7 +112,7 @@ getAnotherCat = async () => {
 const startGame = () => {
   getCat();
   getDog();
-  let pick = prompt("Which is the Cuttest of the Two?");
+  let pick = prompt("Which is the Cutest of the Two?");
   if (pick.toLowerCase() === "cat") {
     catScore++;
     catPoints.innerHTML = catScore;
